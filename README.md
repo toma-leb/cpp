@@ -1,3 +1,5 @@
 # cpp
 
-## Exo 1
+All directory must contain CMakeLists.txt
+
+## Exo 1 : find_motive
