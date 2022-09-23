@@ -5,22 +5,23 @@ int find_motive(std::string path, std::string motive)
 {
 
     std::ifstream File(path);
-    std::string ln;
+    std::string word;
     int occurance = 0;
-    int suff[motive.length()];
-
+    int found;
+ 
     if (File.is_open()) 
     {
-        while (getline(File,ln)) 
+        while (File >> word) 
         {
-            if (ln.find(motive) != std::string::npos) {
+            if (word.find(motive) != std::string::npos) {
                 occurance += 1;
-
             }
         }
     }
+    else 
+    {
+        std::cout<<"The file "<< path <<" could not be opened."<<std::endl;
+    }
 
-    std::cout << occurance << '\n';
-
-    return 0;
+    return occurance;
 }

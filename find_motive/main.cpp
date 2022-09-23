@@ -6,6 +6,7 @@ int main(int argc, char* argv[])
     std::string path;
 
     int ret_val = 0;
+    int occurance = 0;
 
     if (argc < 3) 
     {
@@ -14,18 +15,16 @@ int main(int argc, char* argv[])
     else
     {
         path = argv[1];
-        for (int i = 2; i < argc; i++) {
-            motive += argv[i];
-            if (i+1 < argc)
-            {
-                motive += " ";
-            }
-        }
+        motive = argv[2];
     }
 
     if (ret_val == 0) 
     {
-        find_motive(path, motive);
+        occurance = find_motive(path, motive);
+        if (occurance != 0)
+        {
+            std::cout<<"The file "<< path <<" contains "<< occurance <<" words containing the motive "<< motive <<std::endl;
+        }
     }
 
     return ret_val;
