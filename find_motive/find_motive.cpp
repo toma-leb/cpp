@@ -18,10 +18,6 @@ int find_motive(std::string path, std::string motive)
             }
         }
     }
-    else 
-    {
-        std::cout<<"The file "<< path <<" could not be opened."<<std::endl;
-    }
 
     return occurance;
 }

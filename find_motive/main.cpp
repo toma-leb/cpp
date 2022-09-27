@@ -18,6 +18,10 @@ int main(int argc, char* argv[])
         
         std::cout<<"The file "<< argv[1] <<" contains "<< occurance <<" words containing the motive "<< argv[2] <<std::endl;
     }
+    else 
+    {
+        std::cout<<"The file "<< argv[1] <<" could not be opened."<<std::endl;
+    }
 
     return ret_val;
 }
