@@ -3,18 +3,18 @@
 
 std::string is_prime(int val)
 {
-    std::string ret= "true";
+    std::string ret= "True";
 
     if (val == 1)
     {
-        ret = "false";
+        ret = "False";
     }
 
     for (int i = 2; i <= sqrt(val); i++)
     {
         if (val % i == 0)
         {
-            ret = "false";
+            ret = "False";
         }
     }
 

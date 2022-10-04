@@ -1,5 +1,6 @@
 #include "is_prime.hpp"
 #include <sstream>
+#include <cstring>
 
 int main()
 {
