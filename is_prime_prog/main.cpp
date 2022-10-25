@@ -16,5 +16,5 @@ int main()
         std::cout<<val<<" is a prime: "<<is_prime(stoll(val))<<std::endl;
     }
     
-    return 1;
+    return 0;
 }
