@@ -178,3 +178,16 @@ std::ostream& operator<<(std::ostream& o, const Vector& v)
     o << "}";
     return o;
 }
+
+Vector::Vector(Vector&& other)
+{
+    std::swap(content_, other.content_);
+    std::swap(size_, other.size_);
+}
+
+Vector& Vector::operator=(Vector&& other)
+{
+    std::swap(content_, other.content_);
+    std::swap(size_, other.size_);
+    return *this;
+}
