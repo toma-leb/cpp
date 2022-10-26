@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-std::string is_prime(int val)
+std::string is_prime(long long val)
 {
     std::string ret= "True";
 
@@ -10,7 +10,7 @@ std::string is_prime(int val)
         ret = "False";
     }
 
-    for (int i = 2; i <= sqrt(val); i++)
+    for (long long i = 2; i <= sqrt(val); i++)
     {
         if (val % i == 0)
         {
