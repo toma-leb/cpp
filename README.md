@@ -6,6 +6,12 @@ All directory must contain CMakeLists.txt
 
 ## Exo 2 : is_prime_prog
 
-## Exo 3 : cartesian_vector_param
+## Exo 3 : cartesian_vector
 
-## Exo 4 : cartesian_vector_variable
+    1. param
+    2. variable
+
+## Exo 4 : selection_sort
+
+    1. basic
+    2. from_file
