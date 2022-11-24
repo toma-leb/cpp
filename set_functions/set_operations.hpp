@@ -1,5 +1,4 @@
 #include <set>
-#include <set>
 
 std::set<int> operator+(const std::set<int>& s1,const std::set<int>& s2)
 {
