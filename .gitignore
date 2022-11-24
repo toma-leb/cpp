@@ -38,6 +38,7 @@
 # Test Files
 
 find_motive/found.txt
+selection_sort_file/*.txt
 
 # VS code
 
